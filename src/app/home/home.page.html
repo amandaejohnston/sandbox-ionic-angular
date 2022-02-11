@@ -13,20 +13,51 @@
     </ion-toolbar>
   </ion-header>
 
-  <div>Click on both buttons, it will be in a wrong state</div>
-  <ion-button (click)="toggleFab()">toggle</ion-button>
-  <ion-fab #fab horizontal="end">
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  
-    <ion-fab-list>
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h2>Using <code>showFab</code> variable</h2>
+        <div>Click on both buttons, it will be in a wrong state</div>
+        <div>ShowFab value : {{ showFab }}</div>
+        <ion-button (click)="toggleShowFab()">toggle</ion-button>
+        <ion-fab [activated]="showFab" horizontal="end">
+          <ion-fab-button (click)="toggleShowFab()">
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        
+          <ion-fab-list side="start">
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+          </ion-fab-list>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h2>Setting <code>activated</code> directly</h2>
+        <ion-button (click)="toggleActivated()">toggle</ion-button>
+        <ion-fab #fab horizontal="end">
+          <ion-fab-button>
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        
+          <ion-fab-list side="start">
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+          </ion-fab-list>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>

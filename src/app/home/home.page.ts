@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { IonFab } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +7,16 @@ import { Component, ViewChild } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  @ViewChild('fab') fab: any;
+  @ViewChild('fab') fab: IonFab;
+  showFab = false;
 
   constructor() {}
 
-  toggleFab() {
+  toggleActivated() {
     this.fab.activated = !this.fab.activated;
+  }
+
+  toggleShowFab() {
+    this.showFab = !this.showFab;
   }
 }
