@@ -9,6 +9,7 @@ import { IonFab } from '@ionic/angular';
 export class HomePage {
   @ViewChild('fab') fab: IonFab;
   showFab = false;
+  showFabRaf = false;
 
   constructor() {}
 
@@ -18,5 +19,9 @@ export class HomePage {
 
   toggleShowFab() {
     this.showFab = !this.showFab;
+  }
+
+  toggleShowFabRaf() {
+    requestAnimationFrame(() => this.showFabRaf = !this.showFabRaf);
   }
 }

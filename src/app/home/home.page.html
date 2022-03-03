@@ -18,7 +18,7 @@
       <ion-col>
         <h2>Using <code>showFab</code> variable</h2>
         <div>Click on both buttons, it will be in a wrong state</div>
-        <div>ShowFab value : {{ showFab }}</div>
+        <div>ShowFab value: {{ showFab }}</div>
         <ion-button (click)="toggleShowFab()">toggle</ion-button>
         <ion-fab [activated]="showFab" horizontal="end">
           <ion-fab-button (click)="toggleShowFab()">
@@ -46,6 +46,28 @@
             <ion-icon name="add"></ion-icon>
           </ion-fab-button>
         
+          <ion-fab-list side="start">
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+          </ion-fab-list>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h2>Using <code>showFab</code> with raf:</h2>
+        <div>ShowFabRaf value: {{ showFabRaf }}</div>
+        <ion-button (click)="toggleShowFabRaf()">toggle</ion-button>
+        <ion-fab [activated]="showFabRaf" horizontal="end">
+          <ion-fab-button (click)="toggleShowFabRaf()">
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+          
           <ion-fab-list side="start">
             <ion-fab-button>
               <ion-icon name="add"></ion-icon>
