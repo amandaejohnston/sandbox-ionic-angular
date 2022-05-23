@@ -1,20 +1,191 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Popover - Position
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="ion-padding">
+  <div class="grid">
+    <div class="grid-item">
+      <h2>Top, Start</h2>
+      <ion-button id="top-start">Click to Open</ion-button>
+      <ion-popover class="top-start-popover" trigger="top-start" side="top" alignment="start">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Top, Center</h2>
+      <ion-button id="top-center">Click to Open</ion-button>
+      <ion-popover class="top-center-popover" trigger="top-center" side="top" alignment="center">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Top, End</h2>
+      <ion-button id="top-end">Click to Open</ion-button>
+      <ion-popover class="top-end-popover" trigger="top-end" side="top" alignment="end">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Right, Start</h2>
+      <ion-button id="right-start">Click to Open</ion-button>
+      <ion-popover class="right-start-popover" trigger="right-start" side="right" alignment="start">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Right, Center</h2>
+      <ion-button id="right-center">Click to Open</ion-button>
+      <ion-popover class="right-center-popover" trigger="right-center" side="right" alignment="center">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Right, End</h2>
+      <ion-button id="right-end">Click to Open</ion-button>
+      <ion-popover class="right-end-popover" trigger="right-end" side="right" alignment="end">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Bottom, Start</h2>
+      <ion-button id="bottom-start">Click to Open</ion-button>
+      <ion-popover class="bottom-start-popover" trigger="bottom-start" side="bottom" alignment="start">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Bottom, Center</h2>
+      <ion-button id="bottom-center">Click to Open</ion-button>
+      <ion-popover class="bottom-center-popover" trigger="bottom-center" side="bottom" alignment="center">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Bottom, End</h2>
+      <ion-button id="bottom-end">Click to Open</ion-button>
+      <ion-popover class="bottom-end-popover" trigger="bottom-end" side="bottom" alignment="end">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Left, Start</h2>
+      <ion-button id="left-start">Click to Open</ion-button>
+      <ion-popover class="left-start-popover" trigger="left-start" side="left" alignment="start">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Left, Center</h2>
+      <ion-button id="left-center">Click to Open</ion-button>
+      <ion-popover class="left-center-popover" trigger="left-center" side="left" alignment="center">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Left, End</h2>
+      <ion-button id="left-end">Click to Open</ion-button>
+      <ion-popover class="left-end-popover" trigger="left-end" side="left" alignment="end">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Start, Start</h2>
+      <ion-button id="start-start">Click to Open</ion-button>
+      <ion-popover class="start-start-popover" trigger="start-start" side="start" alignment="start">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Start, Center</h2>
+      <ion-button id="start-center">Click to Open</ion-button>
+      <ion-popover class="start-center-popover" trigger="start-center" side="start" alignment="center">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>Start, End</h2>
+      <ion-button id="start-end">Click to Open</ion-button>
+      <ion-popover class="start-end-popover" trigger="start-end" side="start" alignment="end">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>End, Start</h2>
+      <ion-button id="end-start">Click to Open</ion-button>
+      <ion-popover class="end-start-popover" trigger="end-start" side="end" alignment="start">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>End, Center</h2>
+      <ion-button id="end-center">Click to Open</ion-button>
+      <ion-popover class="end-center-popover" trigger="end-center" side="end" alignment="center">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
+  
+    <div class="grid-item">
+      <h2>End, End</h2>
+      <ion-button id="end-end">Click to Open</ion-button>
+      <ion-popover class="end-end-popover" trigger="end-end" side="end" alignment="end">
+        <ng-template>
+          <ion-content class="ion-padding">Hello</ion-content>
+        </ng-template>
+      </ion-popover>
+    </div>
   </div>
 </ion-content>
