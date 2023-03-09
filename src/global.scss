@@ -24,3 +24,7 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+// TODO: need to use this stylesheet instead of old one
+// should also call out in React and Vue that if you're using Swiper Element, you'll need this one
+@import '~@ionic/angular/css/ionic-swiper-element';
