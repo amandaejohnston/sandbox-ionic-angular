@@ -13,9 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <swiper-container init="false" #swiper [modules]="modules" [autoplay]="true">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
+  <swiper-container init="false" #swiper [pagination]="true" [scrollbar]="{ draggable: true }">
+    <swiper-slide>
+      <img src="https://loremflickr.com/600/400?random=1" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://loremflickr.com/600/400?random=2" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://loremflickr.com/600/400?random=3" />
+    </swiper-slide>
   </swiper-container>
 </ion-content>
