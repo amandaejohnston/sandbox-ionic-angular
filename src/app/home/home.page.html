@@ -13,7 +13,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <swiper-container init="false" #swiper [pagination]="true" [scrollbar]="{ draggable: true }">
+  <swiper-container #swiper [modules]="swiperModules" (slidechangetransitionstart)="test()" effect="flip">
     <swiper-slide>
       <img src="https://loremflickr.com/600/400?random=1" />
     </swiper-slide>

@@ -1,5 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
-import { register } from 'swiper/element/bundle';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IonicSlides } from '@ionic/angular';
 
 @Component({
@@ -7,19 +6,13 @@ import { IonicSlides } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements AfterViewInit {
+export class HomePage {
   @ViewChild('swiper')
   swiperRef: ElementRef | undefined;
 
-  modules = [IonicSlides];
+  swiperModules = [IonicSlides];
 
-  // TODO: setTimeout is needed as a workaround for https://github.com/nolimits4web/swiper/issues/6473
-  // due to Ionic moving the el around in the routing process
-  // possibly the afterViewInit hook too?
-  ngAfterViewInit() {
-    setTimeout(() => {
-      register();
-      this.swiperRef?.nativeElement.initialize();
-    }, 0);
+  test() {
+    console.log(this.swiperRef?.nativeElement.swiper.activeIndex);
   }
 }
